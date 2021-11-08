@@ -1,0 +1,12 @@
+prefix=/Users/sliu/work_md/temp/openssl-1.1.1b/android-23
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines-1.1
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.1.1b
+Libs: -L${libdir} -lcrypto
+Libs.private: -lz -ldl -pthread 
+Cflags: -I${includedir}
